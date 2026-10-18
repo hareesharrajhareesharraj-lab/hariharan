@@ -66,6 +66,25 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
         {/* Modal Printable Resume Document */}
         <div className="flex-1 overflow-y-auto p-6 sm:p-10 space-y-8 bg-[#f8fafc] font-sans text-slate-800">
+          <figure className="bg-white border border-slate-200 rounded-xl p-2 shadow-xs">
+            <img
+              src={portfolioData.personal.resumeUrl}
+              alt="Resume of Hariharan R., AI & Data Science student"
+              className="w-full h-auto rounded-lg"
+            />
+            <figcaption className="flex items-center justify-between gap-2 px-2 pt-2 text-[11px] text-slate-500">
+              <span>Original resume</span>
+              <a
+                href={portfolioData.personal.resumeUrl}
+                download="Hariharan-R-Resume.jpeg"
+                className="inline-flex items-center gap-1 font-semibold text-cyan-700 hover:underline"
+              >
+                <Download className="h-3.5 w-3.5" />
+                Download
+              </a>
+            </figcaption>
+          </figure>
+
           {/* Header Strip */}
           <div className="border-b border-slate-200 pb-6 flex flex-col sm:flex-row justify-between gap-4">
             <div>
