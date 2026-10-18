@@ -33,6 +33,7 @@ export interface CertificationItem {
   credentialUrl?: string;
   description: string;
   verified: boolean;
+  imageUrl?: string;
 }
 
 export interface InterestItem {
@@ -97,10 +98,9 @@ export const portfolioData: PortfolioData = {
     subtitle: "Artificial Intelligence & Data Science Student",
     tagline: "Building intelligent solutions through data, technology, and curiosity.",
     bio: "I am an AI & Data Science student with a strong interest in building intelligent solutions using data and technology. I enjoy learning new tools, exploring real-world problems and developing projects that create an impact. I am passionate about continuous improvement and eager to contribute to innovative teams in the field of Artificial Intelligence and Data Science.",
-    // Elegant SVG placeholder avatar with initial & tech geometry, easy to replace with custom photo URL
-    avatarUrl: "",
-    avatarAlt: "Hariharan R. — AI & Data Science Profile",
-    resumeUrl: "#",
+    avatarUrl: "/images/hariharan.jpeg",
+    avatarAlt: "Portrait of Hariharan R. wearing a black suit and glasses",
+    resumeUrl: "/images/hariharan-resume.jpeg",
   },
   navigation: [
     { label: "Home", href: "#home" },
@@ -203,19 +203,22 @@ export const portfolioData: PortfolioData = {
       issuer: "Anthropic",
       description: "Foundational understanding of Claude models, prompting techniques, and responsible AI deployment principles.",
       verified: true,
+      imageUrl: "/images/cert-claude-101.jpeg",
     },
     {
       title: "AI Fluency for Students",
       issuer: "Anthropic",
       description: "Mastery of generative AI concepts, ethical considerations, and practical workflows for academic and engineering excellence.",
       verified: true,
+      imageUrl: "/images/cert-ai-fluency.jpeg",
     },
     {
       title: "Data Analytics Webinar",
-      issuer: "Industry Webinar",
+      issuer: "Brand Monk Academy · NSDC",
       date: "6 July 2026",
       description: "Specialized training on modern data analysis pipelines, exploratory visualization strategies, and actionable business insights.",
       verified: true,
+      imageUrl: "/images/cert-data-analytics.jpeg",
     },
   ],
   interests: [

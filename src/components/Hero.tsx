@@ -93,8 +93,7 @@ export const Hero: React.FC<HeroProps> = ({ onProjectsClick, onContactClick }) =
                   <img
                     src={portfolioData.personal.avatarUrl}
                     alt={portfolioData.personal.avatarAlt}
-                    referrerPolicy="no-referrer"
-                    className="h-full w-full rounded-full object-cover"
+                    className="h-full w-full rounded-full object-cover object-[50%_20%]"
                   />
                 ) : (
                   /* Stylized AI & Data Science Profile Visual Placeholder */

@@ -30,6 +30,23 @@ export const Certifications: React.FC = () => {
                 className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-300 hover:shadow-md transition-all duration-200 group relative overflow-hidden"
               >
                 <div className="space-y-4">
+                  {cert.imageUrl && (
+                    <a
+                      href={cert.imageUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block overflow-hidden rounded-xl border border-slate-200 bg-slate-50"
+                      aria-label={`View full ${cert.title} certificate`}
+                    >
+                      <img
+                        src={cert.imageUrl}
+                        alt={`${cert.title} certificate issued to Hariharan R.`}
+                        loading="lazy"
+                        className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                      />
+                    </a>
+                  )}
+
                   {/* Top Badge & Issuer */}
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 border border-cyan-100 group-hover:scale-105 transition-transform">
@@ -65,7 +82,7 @@ export const Certifications: React.FC = () => {
                   ) : (
                     <span className="text-slate-400">Official Coursework</span>
                   )}
-                  <span className="text-cyan-700 font-medium">Anthropic Ecosystem</span>
+                  <span className="text-cyan-700 font-medium">{cert.issuer}</span>
                 </div>
               </div>
             );
