@@ -60,12 +60,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onResumeClick }) => {
         <a
           href="#home"
           onClick={(e) => handleLinkClick(e, '#home')}
-          className="group flex items-center gap-2.5 whitespace-nowrap shrink-0 text-slate-900 hover:text-cyan-700 transition-colors"
+          className="group flex items-center gap-2.5 whitespace-nowrap shrink-0 text-slate-900 hover:text-stone-700 transition-colors"
         >
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-600 to-blue-600 text-xs font-bold text-white shadow-sm shadow-cyan-600/20 group-hover:scale-105 transition-transform">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-stone-600 to-stone-700 text-xs font-bold text-white shadow-sm shadow-stone-600/20 group-hover:scale-105 transition-transform">
             HR
           </div>
-          <span className="text-base font-bold tracking-tight text-slate-900 group-hover:text-cyan-700 transition-colors">
+          <span className="text-base font-bold tracking-tight text-slate-900 group-hover:text-stone-700 transition-colors">
             {portfolioData.personal.name}
           </span>
         </a>
@@ -82,13 +82,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onResumeClick }) => {
                 onClick={(e) => handleLinkClick(e, link.href)}
                 className={`relative py-1 transition-colors whitespace-nowrap shrink-0 ${
                   isActive
-                    ? 'text-cyan-700 font-semibold'
+                    ? 'text-stone-700 font-semibold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
                 {link.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 h-0.5 w-full bg-cyan-600 rounded-full" />
+                  <span className="absolute bottom-0 left-0 h-0.5 w-full bg-stone-600 rounded-full" />
                 )}
               </a>
             );
@@ -99,7 +99,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onResumeClick }) => {
         <div className="flex items-center gap-3 shrink-0">
           <button
             onClick={onResumeClick}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold text-white bg-cyan-600 hover:bg-cyan-700 rounded-lg shadow-sm shadow-cyan-600/20 transition-all duration-150 cursor-pointer whitespace-nowrap active:scale-95"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold text-white bg-stone-600 hover:bg-stone-700 rounded-lg shadow-sm shadow-stone-600/20 transition-all duration-150 cursor-pointer whitespace-nowrap active:scale-95"
           >
             <FileText className="h-3.5 w-3.5" />
             <span>Download Resume</span>
@@ -131,7 +131,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onResumeClick }) => {
                   onClick={(e) => handleLinkClick(e, link.href)}
                   className={`flex items-center px-3 py-2.5 rounded-lg text-xs font-medium transition-colors ${
                     isActive
-                      ? 'bg-cyan-50 text-cyan-700 font-semibold border border-cyan-200'
+                      ? 'bg-stone-50 text-stone-700 font-semibold border border-stone-200'
                       : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/60'
                   }`}
                 >
@@ -146,7 +146,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onResumeClick }) => {
                 setMobileMenuOpen(false);
                 onResumeClick();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 text-xs font-semibold text-white bg-cyan-600 rounded-lg cursor-pointer"
+              className="w-full flex items-center justify-center gap-2 py-2.5 text-xs font-semibold text-white bg-stone-600 rounded-lg cursor-pointer"
             >
               <FileText className="h-4 w-4" />
               <span>Download Resume</span>
