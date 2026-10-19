@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
           {/* Brand & Tagline */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-600 to-blue-600 text-[11px] font-bold text-white shadow-xs">
+              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-stone-600 to-stone-700 text-[11px] font-bold text-white shadow-xs">
                 HR
               </div>
               <span className="text-base font-bold text-slate-900 tracking-tight">
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-4">
             <a
               href={`mailto:${portfolioData.contact.email}`}
-              className="flex h-9 w-9 items-center justify-center rounded-xl bg-white border border-slate-300 text-slate-700 hover:text-cyan-700 hover:border-cyan-400 transition-colors shadow-2xs"
+              className="flex h-9 w-9 items-center justify-center rounded-xl bg-white border border-slate-300 text-slate-700 hover:text-stone-700 hover:border-stone-400 transition-colors shadow-2xs"
               title="Send an Email"
               aria-label="Email"
             >
@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
               href={portfolioData.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-9 w-9 items-center justify-center rounded-xl bg-white border border-slate-300 text-slate-700 hover:text-cyan-700 hover:border-cyan-400 transition-colors shadow-2xs"
+              className="flex h-9 w-9 items-center justify-center rounded-xl bg-white border border-slate-300 text-slate-700 hover:text-stone-700 hover:border-stone-400 transition-colors shadow-2xs"
               title="LinkedIn Profile"
               aria-label="LinkedIn"
             >

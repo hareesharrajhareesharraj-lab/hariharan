@@ -37,7 +37,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         {/* Modal Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-white shrink-0">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-cyan-50 text-cyan-700 border border-cyan-100">
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-stone-50 text-stone-700 border border-stone-100">
               <Download className="h-5 w-5" />
             </div>
             <div>
@@ -51,7 +51,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 hover:text-slate-900 rounded-lg border border-slate-200 transition-colors cursor-pointer"
               title="Print or Save as PDF"
             >
-              <Printer className="h-4 w-4 text-cyan-700" />
+              <Printer className="h-4 w-4 text-stone-700" />
               <span className="hidden sm:inline">Print / PDF</span>
             </button>
             <button
@@ -77,7 +77,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               <a
                 href={portfolioData.personal.resumeUrl}
                 download="Hariharan-R-Resume.jpeg"
-                className="inline-flex items-center gap-1 font-semibold text-cyan-700 hover:underline"
+                className="inline-flex items-center gap-1 font-semibold text-stone-700 hover:underline"
               >
                 <Download className="h-3.5 w-3.5" />
                 Download
@@ -91,7 +91,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">
                 {portfolioData.personal.name}
               </h1>
-              <p className="text-sm font-semibold text-cyan-700 mt-1">
+              <p className="text-sm font-semibold text-stone-700 mt-1">
                 {portfolioData.personal.subtitle}
               </p>
               <p className="text-xs text-slate-600 mt-2 max-w-xl leading-relaxed">
@@ -100,24 +100,24 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             </div>
             <div className="space-y-1.5 text-xs text-slate-600 sm:text-right shrink-0">
               <div className="flex items-center gap-2 sm:justify-end">
-                <Mail className="h-3.5 w-3.5 text-cyan-600" />
-                <a href={`mailto:${portfolioData.contact.email}`} className="hover:text-cyan-700 transition-colors">
+                <Mail className="h-3.5 w-3.5 text-stone-600" />
+                <a href={`mailto:${portfolioData.contact.email}`} className="hover:text-stone-700 transition-colors">
                   {portfolioData.contact.email}
                 </a>
               </div>
               <div className="flex items-center gap-2 sm:justify-end">
-                <Phone className="h-3.5 w-3.5 text-cyan-600" />
-                <a href={`tel:${portfolioData.contact.phone}`} className="hover:text-cyan-700 transition-colors">
+                <Phone className="h-3.5 w-3.5 text-stone-600" />
+                <a href={`tel:${portfolioData.contact.phone}`} className="hover:text-stone-700 transition-colors">
                   {portfolioData.contact.phoneDisplay}
                 </a>
               </div>
               <div className="flex items-center gap-2 sm:justify-end">
-                <MapPin className="h-3.5 w-3.5 text-cyan-600" />
+                <MapPin className="h-3.5 w-3.5 text-stone-600" />
                 <span>Tamil Nadu, India</span>
               </div>
               <div className="flex items-center gap-2 sm:justify-end">
-                <ExternalLink className="h-3.5 w-3.5 text-cyan-600" />
-                <a href={portfolioData.contact.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-700 transition-colors">
+                <ExternalLink className="h-3.5 w-3.5 text-stone-600" />
+                <a href={portfolioData.contact.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-stone-700 transition-colors">
                   {portfolioData.contact.linkedinDisplay}
                 </a>
               </div>
@@ -126,14 +126,14 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Education */}
           <section className="space-y-3">
-            <h2 className="text-xs font-bold tracking-wider text-cyan-700 uppercase flex items-center gap-2">
+            <h2 className="text-xs font-bold tracking-wider text-stone-700 uppercase flex items-center gap-2">
               <GraduationCap className="h-4 w-4" />
               Education
             </h2>
             <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-xs">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                 <h3 className="font-bold text-slate-900 text-sm">{portfolioData.education.institution}</h3>
-                <span className="text-xs font-mono text-cyan-700 font-semibold">{portfolioData.education.duration}</span>
+                <span className="text-xs font-mono text-stone-700 font-semibold">{portfolioData.education.duration}</span>
               </div>
               <p className="text-xs text-slate-700 font-medium mt-0.5">{portfolioData.education.degree}</p>
               <p className="text-xs text-slate-500 mt-1">{portfolioData.education.location}</p>
@@ -147,7 +147,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Technical Skills */}
           <section className="space-y-3">
-            <h2 className="text-xs font-bold tracking-wider text-cyan-700 uppercase flex items-center gap-2">
+            <h2 className="text-xs font-bold tracking-wider text-stone-700 uppercase flex items-center gap-2">
               <Code2 className="h-4 w-4" />
               Technical Proficiencies
             </h2>
@@ -169,7 +169,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Projects */}
           <section className="space-y-3">
-            <h2 className="text-xs font-bold tracking-wider text-cyan-700 uppercase flex items-center gap-2">
+            <h2 className="text-xs font-bold tracking-wider text-stone-700 uppercase flex items-center gap-2">
               <Award className="h-4 w-4" />
               Key Technical Projects
             </h2>
@@ -180,7 +180,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                     <h3 className="text-sm font-bold text-slate-900">{proj.title}</h3>
                     <div className="flex flex-wrap gap-1.5">
                       {proj.tags.map((t, ti) => (
-                        <span key={ti} className="text-[11px] text-cyan-700 font-mono font-semibold">
+                        <span key={ti} className="text-[11px] text-stone-700 font-mono font-semibold">
                           #{t}
                         </span>
                       ))}
@@ -189,7 +189,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                   <ul className="mt-2.5 space-y-1.5 text-xs text-slate-700">
                     {proj.bullets.map((b, bi) => (
                       <li key={bi} className="flex items-start gap-2">
-                        <span className="text-cyan-600 font-bold leading-tight">›</span>
+                        <span className="text-stone-600 font-bold leading-tight">›</span>
                         <span>{b}</span>
                       </li>
                     ))}
@@ -202,7 +202,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           {/* Certifications & Languages */}
           <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <h2 className="text-xs font-bold tracking-wider text-cyan-700 uppercase mb-3">
+              <h2 className="text-xs font-bold tracking-wider text-stone-700 uppercase mb-3">
                 Certifications
               </h2>
               <div className="space-y-2">
@@ -216,14 +216,14 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             </div>
 
             <div>
-              <h2 className="text-xs font-bold tracking-wider text-cyan-700 uppercase mb-3">
+              <h2 className="text-xs font-bold tracking-wider text-stone-700 uppercase mb-3">
                 Languages
               </h2>
               <div className="space-y-2">
                 {portfolioData.languages.map((l, li) => (
                   <div key={li} className="bg-white border border-slate-200 rounded-xl p-3 flex justify-between items-center shadow-xs">
                     <span className="text-xs font-bold text-slate-900">{l.name}</span>
-                    <span className="text-xs font-mono text-cyan-700 font-semibold">{l.level}</span>
+                    <span className="text-xs font-mono text-stone-700 font-semibold">{l.level}</span>
                   </div>
                 ))}
               </div>
@@ -234,7 +234,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         {/* Modal Footer */}
         <div className="flex items-center justify-between px-6 py-3.5 border-t border-slate-200 bg-white shrink-0">
           <p className="text-xs text-slate-500">
-            Direct Inquiry: <a href={`mailto:${portfolioData.contact.email}`} className="text-cyan-700 font-medium hover:underline">{portfolioData.contact.email}</a>
+            Direct Inquiry: <a href={`mailto:${portfolioData.contact.email}`} className="text-stone-700 font-medium hover:underline">{portfolioData.contact.email}</a>
           </p>
           <button
             onClick={onClose}

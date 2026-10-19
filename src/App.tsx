@@ -27,7 +27,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#f3f4f6] text-slate-800 flex flex-col selection:bg-cyan-200 selection:text-cyan-900">
+    <div className="relative min-h-screen bg-[#f3f4f6] text-slate-800 flex flex-col selection:bg-stone-200 selection:text-stone-900">
       {/* Plain Ash Background */}
       <NeuralBackground />
 

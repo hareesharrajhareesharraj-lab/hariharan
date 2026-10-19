@@ -59,14 +59,14 @@ export const Contact: React.FC = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-start max-w-2xl mb-12">
-          <div className="flex items-center gap-2 text-xs font-mono text-cyan-700 uppercase tracking-widest mb-2 font-semibold">
+          <div className="flex items-center gap-2 text-xs font-mono text-stone-700 uppercase tracking-widest mb-2 font-semibold">
             <Mail className="h-3.5 w-3.5" />
             <span>Direct Inquiries</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
             Get In Touch
           </h2>
-          <div className="h-1 w-12 bg-cyan-600 rounded-full mt-3" />
+          <div className="h-1 w-12 bg-stone-600 rounded-full mt-3" />
           <p className="text-sm text-slate-600 mt-4">
             Available for student internships, research collaborations, project discussions, and AI engineering opportunities.
           </p>
@@ -79,14 +79,14 @@ export const Contact: React.FC = () => {
             {/* Phone Card */}
             <div className="bg-white border border-slate-200 hover:border-slate-300 p-5 rounded-2xl flex items-center justify-between gap-4 transition-all shadow-sm">
               <div className="flex items-center gap-3.5 min-w-0">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 border border-cyan-100">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-stone-50 text-stone-700 border border-stone-100">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
                   <p className="text-xs text-slate-500 font-mono font-medium">Phone</p>
                   <a
                     href={`tel:${contact.phone}`}
-                    className="text-sm font-bold text-slate-900 hover:text-cyan-700 transition-colors block truncate mt-0.5"
+                    className="text-sm font-bold text-slate-900 hover:text-stone-700 transition-colors block truncate mt-0.5"
                   >
                     {contact.phoneDisplay}
                   </a>
@@ -109,14 +109,14 @@ export const Contact: React.FC = () => {
             {/* Email Card */}
             <div className="bg-white border border-slate-200 hover:border-slate-300 p-5 rounded-2xl flex items-center justify-between gap-4 transition-all shadow-sm">
               <div className="flex items-center gap-3.5 min-w-0">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 border border-cyan-100">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-stone-50 text-stone-700 border border-stone-100">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
                   <p className="text-xs text-slate-500 font-mono font-medium">Email Address</p>
                   <a
                     href={`mailto:${contact.email}`}
-                    className="text-sm font-bold text-slate-900 hover:text-cyan-700 transition-colors block truncate mt-0.5"
+                    className="text-sm font-bold text-slate-900 hover:text-stone-700 transition-colors block truncate mt-0.5"
                   >
                     {contact.email}
                   </a>
@@ -139,7 +139,7 @@ export const Contact: React.FC = () => {
             {/* LinkedIn Card */}
             <div className="bg-white border border-slate-200 hover:border-slate-300 p-5 rounded-2xl flex items-center justify-between gap-4 transition-all shadow-sm">
               <div className="flex items-center gap-3.5 min-w-0">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 border border-cyan-100">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-stone-50 text-stone-700 border border-stone-100">
                   <Linkedin className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
@@ -148,7 +148,7 @@ export const Contact: React.FC = () => {
                     href={contact.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-bold text-slate-900 hover:text-cyan-700 transition-colors block truncate mt-0.5"
+                    className="text-sm font-bold text-slate-900 hover:text-stone-700 transition-colors block truncate mt-0.5"
                   >
                     {contact.linkedinDisplay}
                   </a>
@@ -168,7 +168,7 @@ export const Contact: React.FC = () => {
 
             {/* Location Card */}
             <div className="bg-white border border-slate-200 p-5 rounded-2xl flex items-start gap-3.5 shadow-sm">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 border border-cyan-100">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-stone-50 text-stone-700 border border-stone-100">
                 <MapPin className="h-5 w-5" />
               </div>
               <div>
@@ -176,7 +176,7 @@ export const Contact: React.FC = () => {
                 <p className="text-sm font-bold text-slate-900 mt-0.5">
                   {contact.location}
                 </p>
-                <span className="inline-block mt-2 text-[11px] font-mono text-cyan-700 font-semibold">
+                <span className="inline-block mt-2 text-[11px] font-mono text-stone-700 font-semibold">
                   {contact.availability}
                 </span>
               </div>
@@ -186,7 +186,7 @@ export const Contact: React.FC = () => {
           {/* Right Column: Contact Form */}
           <div className="lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm relative">
             <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
-              <MessageSquare className="h-5 w-5 text-cyan-600" />
+              <MessageSquare className="h-5 w-5 text-stone-600" />
               Send a Message
             </h3>
             <p className="text-xs text-slate-500 mb-6">
@@ -207,7 +207,7 @@ export const Contact: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-xs font-semibold text-slate-700 mb-1.5">
-                    Your Name <span className="text-cyan-600">*</span>
+                    Your Name <span className="text-stone-600">*</span>
                   </label>
                   <input
                     type="text"
@@ -217,13 +217,13 @@ export const Contact: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="e.g. John Doe"
-                    className="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-cyan-600 focus:ring-1 focus:ring-cyan-600 transition-colors"
+                    className="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-stone-600 focus:ring-1 focus:ring-stone-600 transition-colors"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-xs font-semibold text-slate-700 mb-1.5">
-                    Email Address <span className="text-cyan-600">*</span>
+                    Email Address <span className="text-stone-600">*</span>
                   </label>
                   <input
                     type="email"
@@ -233,14 +233,14 @@ export const Contact: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="e.g. john@example.com"
-                    className="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-cyan-600 focus:ring-1 focus:ring-cyan-600 transition-colors"
+                    className="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-stone-600 focus:ring-1 focus:ring-stone-600 transition-colors"
                   />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="subject" className="block text-xs font-semibold text-slate-700 mb-1.5">
-                  Subject <span className="text-cyan-600">*</span>
+                  Subject <span className="text-stone-600">*</span>
                 </label>
                 <input
                   type="text"
@@ -250,13 +250,13 @@ export const Contact: React.FC = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="e.g. Internship Inquiry / AI Project Discussion"
-                  className="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-cyan-600 focus:ring-1 focus:ring-cyan-600 transition-colors"
+                  className="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-stone-600 focus:ring-1 focus:ring-stone-600 transition-colors"
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-xs font-semibold text-slate-700 mb-1.5">
-                  Message <span className="text-cyan-600">*</span>
+                  Message <span className="text-stone-600">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -266,14 +266,14 @@ export const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Share details regarding your opportunity or project query..."
-                  className="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-cyan-600 focus:ring-1 focus:ring-cyan-600 transition-colors resize-none"
+                  className="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-stone-600 focus:ring-1 focus:ring-stone-600 transition-colors resize-none"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs sm:text-sm font-semibold text-white bg-cyan-600 hover:bg-cyan-700 disabled:opacity-50 rounded-xl shadow-md shadow-cyan-600/20 transition-all duration-150 cursor-pointer active:scale-98"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs sm:text-sm font-semibold text-white bg-stone-600 hover:bg-stone-700 disabled:opacity-50 rounded-xl shadow-md shadow-stone-600/20 transition-all duration-150 cursor-pointer active:scale-98"
               >
                 {isSubmitting ? (
                   <span>Transmitting...</span>
